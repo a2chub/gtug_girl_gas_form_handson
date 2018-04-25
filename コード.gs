@@ -112,3 +112,10 @@ function getCurrentTime(){
   Logger.log( cur_time );
   return cur_time
 }
+
+
+// Quota確認
+function getRemainingDailyQuota(){
+  max = MailApp.getRemainingDailyQuota();
+  Logger.log("本日の送信可能件数は" +max+ "件です");
+}
